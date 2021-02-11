@@ -36,3 +36,24 @@ def incrementar_sueldo_2(sueldo):
 
 incrementar_sueldo_2(800)
 incrementar_sueldo_2(2000)
+
+
+# 3. Dado un valor que representa una cantidad en segundos,
+# indica su equivalente en minutos, horas y días.
+
+def convertir_segundos(segundos):
+    un_minuto = 60
+    hora = 3600
+    dias = 86400
+
+    resultado_min = segundos / un_minuto
+    resultado_hr = segundos / hora
+    resultado_dia = segundos / dias
+
+    print(f'segundos {segundos}')
+    print(f'segundos a hora: {resultado_hr}')
+    print(f'segundos a minutos: {resultado_min}')
+    print(f'segundosa dias: {resultado_dia}')
+
+
+convertir_segundos(87600)
