@@ -12,6 +12,7 @@ def incrementar_sueldo(sueldo):
 
 incrementar_sueldo(2000)
 
+print()
 # 2. Aplica un incremento de sueldo del 8% al salario de un trabajador,
 # solo si este gana menos que el salario mínimo
 # (escoge cualquier valor para el salario mínimo, porejemplo 1000).
@@ -37,9 +38,10 @@ def incrementar_sueldo_2(sueldo):
 incrementar_sueldo_2(800)
 incrementar_sueldo_2(2000)
 
-
+print()
 # 3. Dado un valor que representa una cantidad en segundos,
 # indica su equivalente en minutos, horas y días.
+
 
 def convertir_segundos(segundos):
     un_minuto = 60
@@ -57,3 +59,24 @@ def convertir_segundos(segundos):
 
 
 convertir_segundos(87600)
+
+print()
+# 4. Determinar el mínimo de 3 valores solicitados. Ahora, con 4 valores.
+
+lista_valores = []
+
+
+def agregar_valor(valor):
+    lista_valores.append(valor)
+
+
+def minimo():
+    print(f'valores: {lista_valores}')
+    if len(lista_valores) <= 4:
+        print(f'valor minimo: {min(lista_valores)}')
+
+
+agregar_valor(2)
+agregar_valor(8)
+agregar_valor(3)
+minimo()
