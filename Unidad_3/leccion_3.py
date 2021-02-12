@@ -80,3 +80,19 @@ agregar_valor(2)
 agregar_valor(8)
 agregar_valor(3)
 minimo()
+
+
+print()
+# 5. Solicita al usuario, un número mayor que cero y menor a un millón,
+# determina si el número de dígitos de dicho valor.
+# Así, si el valor ingresado es 3, entonces el resultado será 1.
+# Del mismo modo, si el valor ingresado es 768590, el resultado será 6
+
+
+def contar_digitos(numero):
+    if 0 < numero < 1000000:
+        digitos = len(str(numero))
+        print(f'el numero {numero} tiene {digitos} digitos')
+
+
+contar_digitos(22)
