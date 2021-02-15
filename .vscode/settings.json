@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "Juego_dado"
+        "Juego_Among_Us"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
