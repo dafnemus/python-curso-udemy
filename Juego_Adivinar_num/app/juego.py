@@ -16,15 +16,15 @@ class Juego:
         while self.intentos <= 7:
             numero = int(input('numero: '))
             if numero == self.num_secret:
-                print('Gano')
+                print(f'Gano el numero era {self.num_secret}')
                 break
             if numero < self.num_secret:
                 print('Numero chico')
             else:
                 print('Numero Grande')
+            if self.intentos == 7:
+                print(f'Perdiste era el: {self.num_secret}')
             self.intentos += 1
-        if self.intentos == 7:
-            print('Perdiste')
 
 
 juego = Juego()
