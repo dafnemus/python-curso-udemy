@@ -55,3 +55,18 @@ for palabra in lista:
     print(palabra)
 
 print()
+
+# Imprimir hasta la tabla del 9.
+VALOR_1 = 1
+VALOR_2 = 2
+for VALOR_1 in range(1, 10):
+    for VALOR_2 in range(1, 10):
+        print(f'{VALOR_1}*{VALOR_2} = ')
+        print(VALOR_1 * VALOR_2)
+
+print()
+# Uso de append y pow(potencia) con FOR.
+lista = []
+for i in range(10):
+    lista.append(pow(i, 3))
+print(lista)
