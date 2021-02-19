@@ -28,3 +28,15 @@ print(f'num min {min(lista)}')
 promedio = sum(lista) / len(lista)
 
 print(f'promedio {promedio}')
+
+# 3. Solicita un número y construye su tabla de multiplicar hasta el 10. Por ejemplo, si se
+# introduce el número 5, entonces debería mostrar:
+# 5x1 = 5
+# 5x2 = 10
+
+numero = int(input('numero: '))
+VALOR_1 = 1
+
+for VALOR_1 in range(1, 11):
+    print(f'{numero}x{VALOR_1} = ', end='')
+    print(VALOR_1 * numero)
