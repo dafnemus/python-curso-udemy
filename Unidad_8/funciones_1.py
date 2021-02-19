@@ -12,18 +12,23 @@ saludar()
 
 saludar('marta')
 
-vocales = dict()
+vocales = {}
 
 
-def contar_vocales():
-    nombre_original = input('Tu nombre es: ')
-    nombre = nombre_original.lower()
+def contar_vocales(nombre):
+    nombre = nombre.lower()
 
     for vocal in 'aeiou':
         contador = nombre.count(vocal)
         vocales[vocal] = contador
 
-    print(f'vocales: {vocales.items()}')
+    return vocales.items()
 
 
-contar_vocales()
+contar_vocales('lola')
+
+
+nombres = ['luis', 'pablo', 'lola', 'julieta']
+for persona in nombres:
+    dict_vocal = contar_vocales(persona)
+    print(f'vocales {persona}: {dict_vocal}')
