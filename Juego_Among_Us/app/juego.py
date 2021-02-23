@@ -15,16 +15,16 @@ class IngresoError(TypeError):
 
 
 class Juego:
-    def __init__(self, lista):
+    def __init__(self, lista: list):
         self.lista = self.validar_jugadores(lista)
 
-    def encontrar_impostor(self):
+    def encontrar_impostor(self) -> bool:
         for i in range(len(self.lista)):
             if self.lista[i] == 'True':
                 return f'El impostor está en la posición {i}'
             return i
 
-    def validar_jugadores(self, lista):
+    def validar_jugadores(self, lista: list):
         if not isinstance(lista, list):
             raise IngresoError()
         if 'True' not in lista:

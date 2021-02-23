@@ -11,7 +11,7 @@ class Dado:
     def __init__(self):
         self.caras = random.randint(1, 6)
 
-    def adivinar_numero(self, numero):
+    def adivinar_numero(self, numero: int) -> bool:
         if not isinstance(numero, int):
             raise IngresoError()
         if numero == self.caras:

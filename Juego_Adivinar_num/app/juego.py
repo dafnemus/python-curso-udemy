@@ -12,7 +12,7 @@ class Juego:
         self.num_secret = random.randint(0, 10)
         self.intentos = 0
 
-    def adivinar_num(self):
+    def adivinar_num(self) -> bool:
         while self.intentos <= 7:
             numero = int(input('numero: '))
             if numero == self.num_secret:
