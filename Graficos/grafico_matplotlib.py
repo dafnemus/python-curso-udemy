@@ -1,13 +1,15 @@
-# Revisemos un dato estadístico: https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/
-
+# pylint: disable=missing-docstring
 import matplotlib.pyplot as plt
 
+# Revisemos un dato estadístico:
+# https://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users/
+
+
 # Grafico de Redes Sociales: hasta 7/2020
-labels = 'Facebook', 'Youtube', 'WhatsApp', 'Facebook Messenger', 'Weixin / WeChat', 'Instagram', 'TikTok', 'QQ', 'Sina Weibo', 'QZone', 'Reddit', 'Kuaishou', 'Snapchat', 'Pinterest', 'Twitter'
+labels = 'Facebook', 'Youtube', 'WhatsApp', 'Messenger', 'Weixin', 'Instagram', 'TikTok', 'QQ', 'Sina Weibo', 'QZone', 'Reddit', 'Kuaishou', 'Snapchat', 'Pinterest', 'Twitter'
 sizes = [2603, 2000, 2000, 1300, 1203, 1082, 800, 694, 550, 517, 430, 400, 397, 367, 326]
 # efexto:
-explode = (0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1) 
-
+explode = (0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)
 
 # grafico de barras
 fig1, ax1 = plt.subplots()
